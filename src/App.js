@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Calender from "./components/Calendar";
+import Map from "./components/Map";
+import Form from "./components/Form";
 
 function App() {
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    address1: "",
+    address2: "",
+    city: "",
+    state: "TX",
+    zip: "",
+    option1: "",
+    plan: "",
+  });
+
+  console.log("input", input);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Bicycle Repair</h1>
+      <Form input={input} setInput={setInput} />
+      <Map />
+      <Calender input={input} />
     </div>
   );
 }
