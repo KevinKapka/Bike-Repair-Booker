@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Calender from "./components/Calendar";
 import Form from "./components/Form";
-import { distanceCalculator } from "./components/DistanceCalculator";
+import { distanceCalculator } from "./utilities/distanceCalculator";
 
 function App() {
   const [input, setInput] = useState({

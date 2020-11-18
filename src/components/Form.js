@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Col, Button } from "react-bootstrap";
 
-import { geolocator } from "./Geolocator";
+import { geolocator } from "../utilities/geolocator";
 
 function BookingForm({ input, setInput, coordinates, setCoordinates }) {
   const [form, setForm] = useState({
