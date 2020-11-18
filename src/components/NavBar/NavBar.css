@@ -1,8 +1,8 @@
 nav {
   position: fixed;
-  top: 0rem;
-  left: 0rem;
-  right: 0rem;
+  top: 35px;
+  left: 20px;
+  right: 0px;
   z-index: 10;
   width: 100%;
 }
@@ -67,7 +67,7 @@ nav {
   margin-top: 2rem;
   position: fixed;
   background: none;
-  margin: 1rem;
+  margin: 20px;
   outline: 0;
   border: none;
   z-index: 100;
@@ -102,7 +102,7 @@ nav {
 .hamburger {
   position: fixed;
   background: none;
-  margin: 1rem;
+  margin: 20px;
   outline: 0;
   border: none;
   z-index: 100;
