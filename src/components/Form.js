@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-
 import { Form, Col, Button } from "react-bootstrap";
 
-function BookingForm({ input, setInput }) {
+import { geolocator } from "./Geolocator";
+
+function BookingForm({ input, setInput, coordinates, setCoordinates }) {
   const [form, setForm] = useState({
     ...input,
   });
@@ -10,6 +11,7 @@ function BookingForm({ input, setInput }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setInput(form);
+    geolocator(form, coordinates, setCoordinates);
   };
 
   const handleChange = (e) => {

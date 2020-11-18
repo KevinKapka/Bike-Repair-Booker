@@ -1,5 +1,7 @@
 import React, { useState, useContext } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Map() {
   const [viewport, setViewport] = useState({
@@ -22,19 +24,9 @@ function Map() {
           setViewport(viewport);
         }}
       >
-        {/* {dataContext.visited.map((brewery, i) => (
-          <Marker
-            key={i}
-            latitude={
-              brewery.latitude === null ? 0 : parseInt(brewery.latitude)
-            }
-            longitude={
-              brewery.longitude === null ? 0 : parseInt(brewery.longitude)
-            }
-          >
-            <i class="fas fa-check-circle" />
-          </Marker>
-        ))} */}
+        <Marker latitude={29.760427} longitude={-95.369804}>
+          <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" />
+        </Marker>
       </ReactMapGL>
     </div>
   );
