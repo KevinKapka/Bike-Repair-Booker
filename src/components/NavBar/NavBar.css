@@ -1,0 +1,163 @@
+nav {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  z-index: 10;
+  width: 100%;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.hideNavBar {
+  position: fixed;
+  width: 30%;
+  background-color: white;
+  color: black;
+  left: 0;
+  top: 0;
+  padding: 60px;
+  display: block;
+  height: 100vh;
+  left: -200vw;
+  transition: left 500ms ease;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.navBar {
+  position: fixed;
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+  left: 0;
+  top: 0;
+  padding: 60px;
+  display: block;
+  height: 100vh;
+  left: 0vw;
+  transition: left 500ms ease;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 20px;
+  margin: 4px 0;
+  background-color: black;
+  display: block;
+  transition: all 500ms ease;
+}
+
+.times span {
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  display: block;
+  transition: all 500ms ease;
+}
+
+.times {
+  margin-top: 2rem;
+  position: fixed;
+  background: none;
+  margin: 1rem;
+  outline: 0;
+  border: none;
+  z-index: 100;
+  transition: all 500ms ease;
+}
+
+.crossMid {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 2px;
+  transform: rotate(-495deg);
+  transition: all 1s ease;
+}
+
+.crossTop {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 4px;
+  transform: rotate(135deg);
+  transition: all 200ms ease;
+}
+
+.crossBottom {
+  padding: 0;
+  margin: 0;
+  transform: rotate(-135deg);
+  transition: all 700ms ease;
+}
+
+.hamburger {
+  position: fixed;
+  background: none;
+  margin: 1rem;
+  outline: 0;
+  border: none;
+  z-index: 100;
+  transition: all 500ms ease;
+}
+nav > * {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+
+.close {
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    margin: 0;
+    width: 100vw;
+    height: 4rem;
+  }
+
+  .navBar {
+    display: flex;
+    position: initial;
+    height: initial;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .times {
+    display: none;
+  }
+
+  nav a {
+    font-size: 2rem;
+    color: #5badd6;
+    padding-left: 2rem;
+  }
+}

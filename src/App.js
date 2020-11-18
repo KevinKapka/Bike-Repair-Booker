@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Switch, Route } from "react-router-dom";
 
-import Calender from "./components/Calendar";
-import Form from "./components/Form";
-import { distanceCalculator } from "./utilities/distanceCalculator";
+import NavBar from "./components/NavBar/NavBar";
+import Landing from "./pages/Landing/Landing";
+import Services from "./pages/Services/Services";
+import Booking from "./pages/Booking/Booking";
 
 function App() {
   const [input, setInput] = useState({
@@ -30,23 +32,20 @@ function App() {
   });
   const [distance, setDistance] = useState(0);
 
-  useEffect(() => {
-    distanceCalculator(coordinates, setDistance);
-  }, [coordinates]);
-
-  console.log("input", input);
-
   return (
     <div className="App">
-      <h1>Bicycle Repair</h1>
-      <h2>Distance: {distance}</h2>
-      <Form
-        input={input}
-        setInput={setInput}
-        coordinates={coordinates}
-        setCoordinates={setCoordinates}
-      />
-      <Calender input={input} />
+      <NavBar />
+      <Switch>
+        <Route path="/services">
+          <Services />
+        </Route>
+        <Route path="/booking">
+          <Booking />
+        </Route>
+        <Route path="/">
+          <Landing />
+        </Route>
+      </Switch>
     </div>
   );
 }
