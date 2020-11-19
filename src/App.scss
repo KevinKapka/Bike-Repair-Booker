@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 
 .App{
   text-align: center;
@@ -136,6 +136,19 @@ table {
 button {
   border: none;
   font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,{
+  font-family: 'Bebas Neue', cursive;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
 }
 
 }
