@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 // import Calender from "../../components/Calendar";
 // import Form from "../../components/Form";
@@ -12,6 +14,7 @@ function Booking() {
   return (
     <div>
       <h1>Booking</h1>
+      <Link to='/booking/address'>Continue</Link>
       {/* <Form
         input={input}
         setInput={setInput}

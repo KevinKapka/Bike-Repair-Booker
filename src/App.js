@@ -6,7 +6,9 @@ import { Switch, Route } from "react-router-dom";
 
 import Landing from "./pages/Landing/Landing";
 import Services from "./pages/Services/Services";
-import Booking from "./pages/Booking/Booking";
+import BookLanding from "./pages/Booking/Landing";
+import BookAddress from "./pages/Booking/Address";
+import BookCalendar from "./pages/Booking/Calendar";
 import Footer from './components/Footer/Footer';
 import LeftNav from './components/NavBar/LeftDrawer'
 
@@ -42,8 +44,14 @@ function App() {
           <Route path="/services">
             <Services />
           </Route>
+          <Route path="/booking/address">
+            <BookAddress />
+          </Route>
+          <Route path="/booking/calendar">
+            <BookCalendar />
+          </Route>
           <Route path="/booking">
-            <Booking />
+            <BookLanding />
           </Route>
           <Route path="/">
             <Landing />

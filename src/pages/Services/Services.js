@@ -43,7 +43,6 @@ const servicesCards = servicesCopy.map(service => {
       </div>
     )
   }
-
 })
 
 function Services() {
