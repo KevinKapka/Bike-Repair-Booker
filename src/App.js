@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <LeftNav />
-      <div className='Wrapper'>
+
         <Switch>
           <Route path="/services">
             <Services />
@@ -49,7 +49,6 @@ function App() {
             <Landing />
           </Route>
         </Switch> 
-      </div>
       <Footer />
     </div>
   );

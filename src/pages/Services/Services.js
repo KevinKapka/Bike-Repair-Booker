@@ -1,6 +1,8 @@
 import React from "react";
 import './Services.scss';
 import { servicesCopy } from './servicesData';
+import { Link } from "react-router-dom";
+
 
 const servicesCards = servicesCopy.map(service => {
   if(service.header !== 'ADDITIONAL SERVICES'){
@@ -13,7 +15,9 @@ const servicesCards = servicesCopy.map(service => {
         <div className='service-card-body'>
           <p className='title'>{service.title}</p>
           <p className='body'>{service.discription}</p>
-          <button>Book Now</button>
+          <Link to='/booking'>
+            <button>Book Now</button>
+          </Link>
         </div>
       </div>
     )
@@ -32,7 +36,9 @@ const servicesCards = servicesCopy.map(service => {
             </div>
           ))}
 
-          <button>Book Now</button>
+          <Link to='/booking'>
+            <button>Book Now</button>
+          </Link>
         </div>
       </div>
     )
