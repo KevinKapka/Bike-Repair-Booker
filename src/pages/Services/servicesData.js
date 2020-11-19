@@ -20,26 +20,27 @@ export const servicesCopy = [
   },
   {    
     header: 'ADDITIONAL SERVICES',
-    price: '$174.99',
-    1: {
-      name: 'Build New Bike From Box',
-      price: '$59.99'
-    },
-    2: {
-      name: 'Build Frame Up',
-      price: 'Contact Us'
-    },
-    3: {
-      name: 'Bleed Hydraulic Brakes',
-      price: '$44.99'
-    },
-    4: {
-      name: 'Suspension Adjustment',
-      price: '$44.99'
-    },
-    5: {
-      name: 'Multi-Bike-Discount',
-      price: 'Contact Us'
-    }
+    addServices: [
+        {
+        name: 'Build New Bike From Box',
+        price: '$59.99'
+        },
+       {
+          name: 'Build Frame Up',
+          price: 'Contact Us'
+        },
+        {
+          name: 'Bleed Hydraulic Brakes',
+          price: '$44.99'
+        },
+        {
+          name: 'Suspension Adjustment',
+          price: '$44.99'
+        },
+        {
+          name: 'Multi-Bike-Discount',
+          price: 'Contact Us'
+        }
+      ],
   }
 ]
