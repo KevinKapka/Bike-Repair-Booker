@@ -37,17 +37,19 @@ function App() {
   return (
     <div className="App">
       <LeftNav />
-      <Switch>
-        <Route path="/services">
-          <Services />
-        </Route>
-        <Route path="/booking">
-          <Booking />
-        </Route>
-        <Route path="/">
-          <Landing />
-        </Route>
-      </Switch>
+      <div className='Wrapper'>
+        <Switch>
+          <Route path="/services">
+            <Services />
+          </Route>
+          <Route path="/booking">
+            <Booking />
+          </Route>
+          <Route path="/">
+            <Landing />
+          </Route>
+        </Switch> 
+      </div>
       <Footer />
     </div>
   );

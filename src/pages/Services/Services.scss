@@ -1,0 +1,78 @@
+@import '../../config/colors.scss';
+@import '../../config/mixins.scss';
+
+.Services {
+    text-align: left;
+    
+
+
+    .page-header{
+        width: 85%;
+        margin: auto;
+        h1{
+            font-size: 42px;
+        }
+    }
+
+
+    .card-container{
+        width: 100%;
+    }
+    .serviceCard {
+        background: $light;
+        width: 325px;
+        margin: 15px auto;
+        text-align: left;
+
+        .header-container{
+            background: $primary;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+
+            .header {
+                font-size: 26px;
+                padding-left: 10px;
+            }
+            .price{
+                padding-right: 10px;
+                font-size: 26px;
+
+            }
+        }
+
+        .service-card-body{
+            padding: 20px;
+
+            .title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .body {
+                font-size: 16px;
+                padding: 10px 0;
+            }
+        }
+
+        .additional-services {
+            padding: 20px;
+
+            .add-serv-group{
+                display: grid;
+                padding-bottom: 10px;
+                grid-template-columns: 2fr 1fr;
+                grid-template-row: 1fr;
+            }
+        }
+
+
+
+        button {
+            @include primaryButton();
+            margin-top: 10px;
+        }
+
+    }
+}
