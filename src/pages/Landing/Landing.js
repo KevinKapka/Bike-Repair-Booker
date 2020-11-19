@@ -3,6 +3,14 @@ import "./Landing.scss";
 import logo from '../../svgs/logo.svg'
 
 function Landing() {
+
+  const toTop = ()=>{
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }
   return (
     <div id="Landing">
       <div className="splash-container">
@@ -37,6 +45,10 @@ function Landing() {
           </ol>
           <button className='landing-btn-1'>Book Now</button>
           <button className='landing-btn-2'>Contact Us</button>
+          <div className='to-top' onClick={toTop}>
+              <p>To-Top</p>
+              <div className='arrow-up'></div>
+          </div>
         </div>
     </div>
   );

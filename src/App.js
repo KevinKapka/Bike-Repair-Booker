@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Landing from "./pages/Landing/Landing";
 import Services from "./pages/Services/Services";
 import Booking from "./pages/Booking/Booking";
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [input, setInput] = useState({
@@ -46,6 +47,7 @@ function App() {
           <Landing />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }

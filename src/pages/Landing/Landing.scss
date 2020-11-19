@@ -69,6 +69,7 @@
     width: 100%;
     text-align: left;
     padding: 20px;
+    position: relative;
 
     h1{
         font-size:42px;
@@ -104,6 +105,32 @@
         color: $secondary;
 
     }
+    .to-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        height: 35px;
+        width: 87px;
+        background: $primary;
+
+        .arrow-up {
+            width: 0; 
+            height: 0; 
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            
+            border-bottom: 12px solid white;
+            margin-left: 5px
+
+            
+        }
+    }
+
+    
   }
 
 
