@@ -1,0 +1,22 @@
+@import '../../config/colors.scss';
+@import '../../config/mixins.scss';
+
+.Services {
+    .card-container{
+        width: 100%;
+    }
+    .serviceCard {
+        background: $light;
+        width: 90%;
+        margin: 15px auto;
+
+        .header-container{
+            background: $primary;
+        }
+
+        button {
+            @include primaryButton();
+        }
+
+    }
+}
