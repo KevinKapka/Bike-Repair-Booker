@@ -1,0 +1,8 @@
+@import './colors.scss';
+
+@mixin primaryButton {
+    width: 110px;
+    height: 50px;
+    background: $primary;
+    border-radius: 20px;
+}

@@ -1,0 +1,137 @@
+@import '../../config/mixins.scss';
+@import '../../config/colors.scss';
+@import '../../config/fonts.scss';
+
+
+#Landing {
+    height: 100%;
+
+    .splash-container{
+        background: #c4c4c4;
+        height: 758px;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    .splash-img-container {
+        height: 400px;
+        width: 100%;
+        background: white;
+        margin-bottom: 20px;
+    }
+
+    .splash-logo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-bottom: 20px;
+        
+        #splash-logo {
+            width: 279px;
+            
+        }
+        h1{
+            padding-top: 10px;
+        }
+    }
+
+    .splash-button-container {
+        width: 100%;
+        display: flex;
+        padding-bottom: 40px;
+        .landing-btn-1 {
+            @include primaryButton();
+            background: white;
+            margin: 10px;
+        }
+        .landing-btn-2{
+            @include primaryButton();
+            border: 1px solid white;
+            margin: 10px;
+            background: none;
+            color: white;
+
+        }
+    }
+
+  }
+
+
+  .info-container{
+    height: 758px;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+
+    h1{
+        font-size:42px;
+        margin: 20px 0 ;
+    }
+
+    h2{
+        font-size: 26px
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+
+        p{
+            text-align: left;
+        }
+    }
+
+    .landing-btn-1 {
+        @include primaryButton();
+        background: white;
+        margin: 10px;
+        background: $secondary;
+    }
+    .landing-btn-2{
+        @include primaryButton();
+        border: 1px solid $secondary;
+        margin: 10px;
+        background: none;
+        color: $secondary;
+
+    }
+    .to-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        height: 35px;
+        width: 87px;
+        background: $primary;
+
+        .arrow-up {
+            width: 0; 
+            height: 0; 
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            
+            border-bottom: 12px solid white;
+            margin-left: 5px
+
+            
+        }
+    }
+
+    
+  }
+
+
+}
