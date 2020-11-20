@@ -17,10 +17,8 @@ const pageSettings = {
 
 function Calendly({ input }) {
   const prefill = {
-    name: input.name,
-    email: input.email,
     customAnswers: {
-      a1: 1 + input.phoneNumber,
+      a1: 1,
       a2: `${input.address1}, ${input.city}, ${input.state} ${input.zip} \n ${input.address2}`,
       a3: input.plan,
     },
@@ -28,7 +26,6 @@ function Calendly({ input }) {
 
   return (
     <div>
-      <h1>Book an Appointment!</h1>
       <InlineWidget
         url="https://calendly.com/trtincher12/bicycle-repair"
         styles={styles}

@@ -15,7 +15,7 @@ const servicesCards = servicesCopy.map(service => {
         <div className='service-card-body'>
           <p className='title'>{service.title}</p>
           <p className='body'>{service.discription}</p>
-          <Link to='/booking'>
+          <Link to='/booking/address'>
             <button>Book Now</button>
           </Link>
         </div>
@@ -36,7 +36,7 @@ const servicesCards = servicesCopy.map(service => {
             </div>
           ))}
 
-          <Link to='/booking'>
+          <Link to='/booking/address'>
             <button>Book Now</button>
           </Link>
         </div>

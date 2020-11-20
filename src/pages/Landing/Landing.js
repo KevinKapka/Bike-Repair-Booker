@@ -1,6 +1,8 @@
 import React from "react";
 import "./Landing.scss";
 import logo from '../../svgs/logo.svg'
+import { Link } from "react-router-dom";
+
 
 function Landing() {
 
@@ -11,8 +13,15 @@ function Landing() {
       behavior: 'smooth'
     })
   }
+
+  const handleHowToScroll = ()=>{
+    document.querySelector('.info-container').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  }
+
   return (
-    <div id="Landing">
+    <div className="Landing">
       <div className="splash-container">
         <div className="splash-img-container">
           <img src="" alt="splash-img" id="splash-img" />
@@ -22,8 +31,12 @@ function Landing() {
           <h1>Mobile Bicycle Repair</h1>
         </div>
         <div className='splash-button-container'>
-          <button className='landing-btn-1'>Book Now</button>
-          <button className='landing-btn-2'>How it Works</button>
+          <Link to='/booking'>
+            <button className='landing-btn-1'>Book Now</button>
+          </Link>
+            <button className='landing-btn-2'
+            onClick={handleHowToScroll}
+            >How it Works</button>
         </div>
       </div>
 

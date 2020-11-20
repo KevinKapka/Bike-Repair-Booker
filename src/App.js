@@ -9,49 +9,54 @@ import Services from "./pages/Services/Services";
 import BookLanding from "./pages/Booking/Landing";
 import BookAddress from "./pages/Booking/Address";
 import BookCalendar from "./pages/Booking/Calendar";
+import Covid19 from './pages/Covid19/Covid19';
 import Footer from './components/Footer/Footer';
 import LeftNav from './components/NavBar/LeftDrawer'
 
 function App() {
   const [input, setInput] = useState({
-    name: "",
-    email: "",
     address1: "",
     address2: "",
     city: "",
     state: "TX",
     zip: "",
-    option1: "",
     plan: "",
   });
   const [coordinates, setCoordinates] = useState({
     start: {
-      lat: 29.760427,
-      lng: -95.369804,
+      lat: 29.758510,
+      lng: -95.497150,
     },
     end: {
-      lat: 29.760427,
-      lng: -95.369804,
+      lat: 29.758510,
+      lng: -95.497150,
     },
   });
   const [distance, setDistance] = useState(0);
-
   return (
     <div className="App">
       <LeftNav />
 
         <Switch>
+          <Route path="/covid19">
+            <Covid19 />
+          </Route>
           <Route path="/services">
             <Services />
           </Route>
           <Route path="/booking/address">
-            <BookAddress />
+            <BookAddress 
+            coordinates={coordinates} setCoordinates={setCoordinates} 
+            distance={distance}
+            setDistance={setDistance} 
+            input={input} 
+            setInput={setInput}/>
           </Route>
           <Route path="/booking/calendar">
-            <BookCalendar />
+            <BookCalendar input={input} />
           </Route>
           <Route path="/booking">
-            <BookLanding />
+            <BookLanding input={input} setInput={setInput}/>
           </Route>
           <Route path="/">
             <Landing />

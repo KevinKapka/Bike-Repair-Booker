@@ -3,8 +3,10 @@
 @import '../../config/fonts.scss';
 
 
-#Landing {
+.Landing {
     height: 100%;
+    scroll-behavior: smooth;
+        
 
     .splash-container{
         background: #c4c4c4;
