@@ -14,8 +14,6 @@ import LeftNav from './components/NavBar/LeftDrawer'
 
 function App() {
   const [input, setInput] = useState({
-    name: "",
-    email: "",
     address1: "",
     address2: "",
     city: "",
@@ -26,16 +24,15 @@ function App() {
   });
   const [coordinates, setCoordinates] = useState({
     start: {
-      lat: 29.760427,
-      lng: -95.369804,
+      lat: 29.758510,
+      lng: -95.497150,
     },
     end: {
-      lat: 29.760427,
-      lng: -95.369804,
+      lat: 29.758510,
+      lng: -95.497150,
     },
   });
   const [distance, setDistance] = useState(0);
-
   return (
     <div className="App">
       <LeftNav />

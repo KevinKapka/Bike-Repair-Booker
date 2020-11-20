@@ -16,11 +16,10 @@ const pageSettings = {
 };
 
 function Calendly({ input }) {
+  console.log('input in Calendly', input)
   const prefill = {
-    name: input.name,
-    email: input.email,
     customAnswers: {
-      a1: 1 + input.phoneNumber,
+      a1: 1,
       a2: `${input.address1}, ${input.city}, ${input.state} ${input.zip} \n ${input.address2}`,
       a3: input.plan,
     },

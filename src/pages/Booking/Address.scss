@@ -19,6 +19,21 @@
         }
     }
 
+    .form-header {
+        h2 {
+            font-size: 25px;
+            padding-top: 20px;
+        }
+
+        .default-message {
+            padding: 15px 0;
+        }
+
+        .rejection-message {
+            color: $danger;
+        }
+    }
+
     .page-body{
         padding: 0 20px 50px 20px;
 

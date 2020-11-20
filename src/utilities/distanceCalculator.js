@@ -13,6 +13,5 @@ export function distanceCalculator(coordinates, setDistance) {
   };
 
   let miles = haversine(start, end, { unit: "mile" });
-  console.log("miles", miles);
-  setDistance(Math.floor(miles));
+  setDistance(miles);
 }

@@ -32,7 +32,7 @@ export function geolocator(input, coordinates, setCoordinates) {
   Geocode.fromAddress(address).then(
     (response) => {
       const { lat, lng } = response.results[0].geometry.location;
-      console.log(lat, lng);
+      // console.log(lat, lng);
       let tempCoordinates = { ...coordinates };
       tempCoordinates.end = { lat, lng };
       setCoordinates(tempCoordinates);
