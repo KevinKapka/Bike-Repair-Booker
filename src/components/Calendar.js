@@ -16,7 +16,6 @@ const pageSettings = {
 };
 
 function Calendly({ input }) {
-  console.log('input in Calendly', input)
   const prefill = {
     customAnswers: {
       a1: 1,

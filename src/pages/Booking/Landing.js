@@ -20,6 +20,10 @@ function Booking({input, setInput}) {
     }
   }
 
+  const onPlanClick = (service)=>{
+    setInput({...input, plan:service.header})
+  }
+
   const servicesCards = servicesCopy.map(service => {
   if(service.header !== 'ADDITIONAL SERVICES'){
     return(
@@ -40,7 +44,7 @@ function Booking({input, setInput}) {
               <p className='title'>{service.title}</p>
               <p className='body'>{service.discription}</p>
               <div className='button-price'>
-                <Link to='/booking/address' onClick={()=> setInput({...input, plan:service.header})}>
+                <Link to='/booking/address' onClick={()=> onPlanClick(service)}>
                   <button>Book Now</button>
                 </Link>
                 <h1 className='price'>{service.price}</h1>
@@ -76,7 +80,7 @@ function Booking({input, setInput}) {
             </div>
           ))}
 
-          <Link to='/booking/address'>
+          <Link to='/booking/address' onClick={()=> onPlanClick(service)}>
             <button>Book Now</button>
           </Link>
         </div>

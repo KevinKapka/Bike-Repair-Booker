@@ -9,6 +9,7 @@ import Services from "./pages/Services/Services";
 import BookLanding from "./pages/Booking/Landing";
 import BookAddress from "./pages/Booking/Address";
 import BookCalendar from "./pages/Booking/Calendar";
+import Covid19 from './pages/Covid19/Covid19';
 import Footer from './components/Footer/Footer';
 import LeftNav from './components/NavBar/LeftDrawer'
 
@@ -19,7 +20,6 @@ function App() {
     city: "",
     state: "TX",
     zip: "",
-    option1: "",
     plan: "",
   });
   const [coordinates, setCoordinates] = useState({
@@ -38,6 +38,9 @@ function App() {
       <LeftNav />
 
         <Switch>
+          <Route path="/covid19">
+            <Covid19 />
+          </Route>
           <Route path="/services">
             <Services />
           </Route>
