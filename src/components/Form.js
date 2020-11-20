@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Form, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 
 import { geolocator } from "../utilities/geolocator";
 
@@ -25,45 +27,12 @@ function BookingForm({ input, setInput, coordinates, setCoordinates }) {
 
   return (
     <Form
-      style={{ width: "500px", margin: "20px auto" }}
+      style={{ width: "100%", margin: "20px auto" }}
       onSubmit={handleSubmit}
     >
-      <Form.Row>
-        <Form.Group as={Col} controlId="formGridName">
-          <Form.Label>Full Name</Form.Label>
-          <Form.Control
-            placeholder="First Last"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-          />
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            type="email"
-            placeholder="Enter email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-          />
-        </Form.Group>
-      </Form.Row>
-
-      <Form.Group controlId="formGridPhoneNumber">
-        <Form.Label>Phone Number</Form.Label>
-        <Form.Control
-          type=""
-          placeholder="(000) 000-0000"
-          name="phoneNumber"
-          value={form.phoneNumber}
-          onChange={handleChange}
-        />
-      </Form.Group>
 
       <Form.Group controlId="formGridAddress1">
-        <Form.Label>Address</Form.Label>
+        <Form.Label style={{paddingTop:'10px'}}>Street address 1</Form.Label>
         <Form.Control
           placeholder="1234 Main St"
           name="address1"
@@ -73,7 +42,7 @@ function BookingForm({ input, setInput, coordinates, setCoordinates }) {
       </Form.Group>
 
       <Form.Group controlId="formGridAddress2">
-        <Form.Label>Address 2</Form.Label>
+        <Form.Label style={{paddingTop:'10px'}}>Street address 2</Form.Label>
         <Form.Control
           placeholder="Apartment, studio, or floor"
           name="address2"
@@ -82,46 +51,38 @@ function BookingForm({ input, setInput, coordinates, setCoordinates }) {
         />
       </Form.Group>
 
-      <Form.Row>
-        <Form.Group as={Col} controlId="formGridCity">
+      <div style={{display:'flex', justifyContent:'space-between', paddingTop:'10px'}}>
+        <div >
           <Form.Label>City</Form.Label>
           <Form.Control name="city" value={form.city} onChange={handleChange} />
-        </Form.Group>
+        </div>
 
-        <Form.Group as={Col} controlId="formGridState">
+        <div style={{width:'33%'}}>
           <Form.Label>State</Form.Label>
           <Form.Control
             name="state"
             value={form.state}
             onChange={handleChange}
           />
-        </Form.Group>
+        </div>
+      </div>
 
-        <Form.Group as={Col} controlId="formGridZip">
+      <div style={{width:'33%', paddingTop:'10px'}}>
           <Form.Label>Zip</Form.Label>
           <Form.Control name="zip" value={form.zip} onChange={handleChange} />
-        </Form.Group>
-      </Form.Row>
+      </div>
 
-      <Form.Group controlId="formPlanSelection">
-        <Form.Control
-          as="select"
-          size="lg"
-          defaultValue="Choose Your Plan"
-          name="plan"
-          value={form.plan}
-          onChange={handleChange}
-        >
-          <option>Choose Your Plan</option>
-          <option>Basic Plan</option>
-          <option>Medium Plan</option>
-          <option>Elete Plan</option>
-        </Form.Control>
-      </Form.Group>
-
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
+      <Link to='/booking/calendar'>
+        <button type='submit' style={{
+              width: '110px',
+              height: '50px',
+              background: '#E5E5E5',
+              borderRadius: '20px',
+              marginTop: '10px'
+        }}>
+          Continue
+        </button>
+      </Link>
     </Form>
   );
 }

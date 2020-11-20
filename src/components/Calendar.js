@@ -28,7 +28,6 @@ function Calendly({ input }) {
 
   return (
     <div>
-      <h1>Book an Appointment!</h1>
       <InlineWidget
         url="https://calendly.com/trtincher12/bicycle-repair"
         styles={styles}

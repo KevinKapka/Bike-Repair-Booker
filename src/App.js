@@ -45,13 +45,18 @@ function App() {
             <Services />
           </Route>
           <Route path="/booking/address">
-            <BookAddress coordinates={coordinates} setCoordinates={setCoordinates} setDistance={setDistance} input={input} setInput={setInput}/>
+            <BookAddress 
+            coordinates={coordinates} setCoordinates={setCoordinates} 
+            distance={distance}
+            setDistance={setDistance} 
+            input={input} 
+            setInput={setInput}/>
           </Route>
           <Route path="/booking/calendar">
             <BookCalendar input={input} />
           </Route>
           <Route path="/booking">
-            <BookLanding />
+            <BookLanding input={input} setInput={setInput}/>
           </Route>
           <Route path="/">
             <Landing />

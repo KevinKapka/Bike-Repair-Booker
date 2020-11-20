@@ -9,7 +9,7 @@ import { servicesCopy } from '../Services/servicesData';
 
 
 
-function Booking() {
+function Booking({input, setInput}) {
   const [ clicked, setClicked ] = useState('')
 
   const handleClick = (name)=>{
@@ -40,7 +40,7 @@ function Booking() {
               <p className='title'>{service.title}</p>
               <p className='body'>{service.discription}</p>
               <div className='button-price'>
-                <Link to='/booking'>
+                <Link to='/booking/address' onClick={()=> setInput({...input, plan:service.header})}>
                   <button>Book Now</button>
                 </Link>
                 <h1 className='price'>{service.price}</h1>
@@ -76,7 +76,7 @@ function Booking() {
             </div>
           ))}
 
-          <Link to='/booking'>
+          <Link to='/booking/address'>
             <button>Book Now</button>
           </Link>
         </div>
