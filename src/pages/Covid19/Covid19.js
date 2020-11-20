@@ -16,11 +16,13 @@ function Covid19() {
                 </p>
 
                 <ul>
-                    <li>Wears a mask at all times</li>
-                    <li>Temperature checked upon arrival</li>
-                    <li>Wash hands before handling bike</li>
-                    <li>Clean bike after maintenance</li>
-                    <li>Maintain 6 feet of distance at all times</li>
+                    <li><div className='bullet'/>
+                    Wears a mask at all times
+                    </li>
+                    <li><div className='bullet'></div>Temperature checked upon arrival</li>
+                    <li><div className='bullet'></div>Wash hands before handling bike</li>
+                    <li><div className='bullet'></div>Clean bike after maintenance</li>
+                    <li><div className='bullet'></div>Maintain 6 feet of distance at all times</li>
                 </ul>
 
                 <p>If you have further concerns or questions, please reach out and we will address them.</p>

@@ -1,3 +1,6 @@
+@import '../../config/colors.scss';
+@import '../../config/mixins.scss';
+
 .Covid19{
     text-align: left;
 
@@ -14,6 +17,32 @@
 
     .page-body {
         padding: 20px;
-        
+
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                padding-top: 15px;
+                .bullet{
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background: black;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        p {
+            padding-top: 15px;
+        }
+
+        button{
+            @include primaryButton()
+            background: $secondary;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
     }
 }
