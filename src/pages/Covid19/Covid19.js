@@ -1,5 +1,7 @@
-import React from 'react'
-import './Covid19.scss'
+import React from 'react';
+import './Covid19.scss';
+import { Link } from "react-router-dom";
+
 
 function Covid19() {
     return (
@@ -27,7 +29,9 @@ function Covid19() {
 
                 <p>If you have further concerns or questions, please reach out and we will address them.</p>
 
-                <button>Contact Us</button>
+                <Link to='/contact'>
+                    <button>Contact Us</button>
+                </Link>
             </div>
         </div>
     )

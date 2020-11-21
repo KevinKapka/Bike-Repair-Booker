@@ -56,8 +56,12 @@ function Landing() {
               <p>Whether you need a tune-up or a new-in-box bicycle built, book an appointment and we will work around your busy schedule.</p>
             </li>
           </ol>
-          <button className='landing-btn-1'>Book Now</button>
-          <button className='landing-btn-2'>Contact Us</button>
+          <Link to='/booking'>
+            <button className='landing-btn-1'>Book Now</button>
+          </Link>
+          <Link to='/contact'>
+            <button className='landing-btn-2'>Contact Us</button>
+          </Link>
           <div className='to-top' onClick={toTop}>
               <p>To-Top</p>
               <div className='arrow-up'></div>

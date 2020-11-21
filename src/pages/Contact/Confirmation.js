@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Confirmation.scss'
 
 function Confirmation() {
+
+    useEffect(()=>{
+        window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+    }, [])
+
+
     return (
         <div className='Confirmation'>
             <div className='page-header'>

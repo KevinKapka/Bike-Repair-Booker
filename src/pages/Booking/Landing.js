@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
@@ -11,6 +11,14 @@ import { servicesCopy } from '../Services/servicesData';
 
 function Booking({input, setInput}) {
   const [ clicked, setClicked ] = useState('')
+
+    useEffect(()=>{
+        window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+    }, [])
 
   const handleClick = (name)=>{
     if(name === clicked){

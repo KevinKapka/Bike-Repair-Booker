@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Form, Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import emailjs from 'emailjs-com'
@@ -7,6 +7,14 @@ import './Contact.scss'
 
 function Contact() {
     const [ isSent, setIsSent ] = useState(false)
+
+    useEffect(()=>{
+        window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+    }, [])
 
     function sendEmail(e){
         e.preventDefault();
