@@ -88,7 +88,7 @@ function BookingForm({ input, setInput, coordinates, setCoordinates, distance, s
           Continue
       </button>
       {distance <= 15 && distance > 0 ? <Redirect to='/booking/calendar' />: null}
-      {distance > 15? <p>you are outside of service area</p>: null}
+      
       
     </Form>
   );

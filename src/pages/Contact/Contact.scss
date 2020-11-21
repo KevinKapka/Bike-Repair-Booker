@@ -1,0 +1,55 @@
+@import '../../config/colors.scss';
+@import '../../config/mixins.scss';
+
+.Contact {
+    text-align: left;
+
+    .page-header{
+        width: 85%;
+        margin: auto;
+        padding-top: 80px;
+        
+        h1{
+            font-size: 42px;
+        }
+        p {
+            padding-bottom: 20px;
+        }
+    }
+
+    .page-body{
+        width: 85%;
+        margin: auto;
+        .contact-form{
+            div {
+                padding-bottom: 15px;
+            }
+
+            input {
+                background: $light;
+            }
+
+            textarea {
+                background: $light;
+            }
+
+            p{
+                
+                span{
+                    color: $danger;
+                }
+            }
+
+            button{
+                @include primaryButton();
+                background: $secondary;
+                width: auto;
+                color: $appBlack;
+                margin-bottom: 50px;
+            }
+
+        }
+
+    }
+
+}
