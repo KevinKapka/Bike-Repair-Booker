@@ -59,7 +59,7 @@ function App() {
             <Contact />
           </Route>         
           <Route path="/services">
-            <Services />
+            <Services input={input} setInput={setInput}/>
           </Route>
           <Route path="/booking/address">
             <BookAddress 

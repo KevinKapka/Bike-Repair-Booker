@@ -4,7 +4,15 @@ import { servicesCopy } from './servicesData';
 import { Link } from "react-router-dom";
 
 
-const servicesCards = servicesCopy.map(service => {
+
+
+function Services({input, setInput}) {
+
+  const onPlanClick = (service)=>{
+    setInput({...input, plan:service.header})
+  }
+
+  const servicesCards = servicesCopy.map(service => {
   if(service.header !== 'ADDITIONAL SERVICES'){
     return(
       <div key={service.header} className='serviceCard'>
@@ -15,7 +23,7 @@ const servicesCards = servicesCopy.map(service => {
         <div className='service-card-body'>
           <p className='title'>{service.title}</p>
           <p className='body'>{service.discription}</p>
-          <Link to='/booking/address'>
+          <Link to='/booking/address' onClick={()=> onPlanClick(service)}>
             <button>Book Now</button>
           </Link>
         </div>
@@ -36,7 +44,7 @@ const servicesCards = servicesCopy.map(service => {
             </div>
           ))}
 
-          <Link to='/booking/address'>
+          <Link to='/booking/address' onClick={()=> onPlanClick(service)}>
             <button>Book Now</button>
           </Link>
         </div>
@@ -44,8 +52,6 @@ const servicesCards = servicesCopy.map(service => {
     )
   }
 })
-
-function Services() {
 
   return (
     <div className='Services'>
