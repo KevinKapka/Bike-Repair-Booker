@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form, Button } from "react-bootstrap";
+import { Redirect } from "react-router-dom";
 import emailjs from 'emailjs-com'
 
 import './Contact.scss'
 
 function Contact() {
+    const [ isSent, setIsSent ] = useState(false)
 
     function sendEmail(e){
         e.preventDefault();
@@ -12,12 +14,17 @@ function Contact() {
         emailjs.sendForm('service_5qhb5bm', 'template_g3rbt0j', e.target, 'user_1tTUVlfVHJ0QgAOqETSmf')
         .then((result) => {
             console.log(result.text);
+            setIsSent(true)
         }, (error) => {
             console.log(error.text);
         });
         e.target.reset()
+        setIsSent(false)
     }
 
+    if(isSent){
+        return(<Redirect to='/contact/confirm' />)
+    }
 
     return (
         <div className='Contact'>

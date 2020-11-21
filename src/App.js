@@ -11,6 +11,7 @@ import BookAddress from "./pages/Booking/Address";
 import BookCalendar from "./pages/Booking/Calendar";
 import Covid19 from './pages/Covid19/Covid19';
 import Contact from './pages/Contact/Contact';
+import Confirmation from './pages/Contact/Confirmation'
 import Footer from './components/Footer/Footer';
 import LeftNav from './components/NavBar/LeftDrawer'
 
@@ -42,9 +43,12 @@ function App() {
           <Route path="/covid19">
             <Covid19 />
           </Route>
+          <Route path="/contact/confirm">
+            <Confirmation />
+          </Route>           
           <Route path="/contact">
             <Contact />
-          </Route>          
+          </Route>         
           <Route path="/services">
             <Services />
           </Route>
