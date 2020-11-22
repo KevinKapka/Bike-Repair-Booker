@@ -1,12 +1,37 @@
-@import '../../config/colors.scss';
 @import '../../config/mixins.scss';
+@import '../../config/colors.scss';
+@import '../../config/fonts.scss';
+@import '../../config/breakpoints.scss';
 
 .BookCalendar {
+    
+    // @media only screen and (min-width: $desktop-lg){
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     width: 100vw;
+    //     min-height: calc(100vh - 300px);
+    // }
+
     .page-header{
         width: 85%;
         margin: auto;
         padding-top: 60px;
         text-align: left;
+
+        @media only screen and (min-width: $desktop-lg){
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        min-height: calc(100vh - 300px);
+        }
+    }
+
+    .page-body{
+         @media only screen and (min-width: $desktop-lg){
+            min-height: 1000px;
+         }
     }
 
 }

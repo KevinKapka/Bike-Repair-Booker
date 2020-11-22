@@ -6,6 +6,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Landing from "./pages/Landing/Landing";
 import Services from "./pages/Services/Services";
+import About from './pages/About/About'
 import BookLanding from "./pages/Booking/Landing";
 import BookAddress from "./pages/Booking/Address";
 import BookCalendar from "./pages/Booking/Calendar";
@@ -49,20 +50,23 @@ function App() {
     <div className="App">
       <LeftNav />
       <TopNav />
-
+      <div className='Wrapper'>
         <Switch>
           <Route path="/covid19">
             <Covid19 />
           </Route>
           <Route path="/contact/confirm">
             <Confirmation />
-          </Route>           
+          </Route>         
           <Route path="/contact">
             <Contact />
           </Route>         
           <Route path="/services">
             <Services input={input} setInput={setInput}/>
           </Route>
+          <Route path="/about">
+            <About />
+          </Route>          
           <Route path="/booking/address">
             <BookAddress 
             coordinates={coordinates} setCoordinates={setCoordinates} 
@@ -81,6 +85,7 @@ function App() {
             <Landing />
           </Route>
         </Switch> 
+      </div>
       <Footer />
     </div>
   );

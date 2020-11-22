@@ -17,9 +17,13 @@ function Calendar({input}) {
     return (
         <div className='BookCalendar'>
             <div className='page-header'>
+              <Calender input={input} />
+            </div>
+            <div className='page-body'>
+              
             </div>
                 
-              <Calender input={input} />
+
         </div>
     )
 }
