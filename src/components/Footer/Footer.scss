@@ -1,4 +1,6 @@
 @import '../../config/colors.scss';
+@import '../../config/breakpoints.scss';
+
 
 .Footer {
     width: 100%;
@@ -15,15 +17,34 @@
         flex-grow: 1;
         padding: 20px;
 
+        @media only screen and (min-width: $desktop-lg){
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 40px;
+
+            .foot-sub{
+                padding-left: 30px;
+            }
+        }
+
         .logo{
-            margin-top: 20px
+            margin-top: 20px;
+
+            @media only screen and (min-width: $desktop-lg){
+                width: 220px;
+                margin:0;
+            }
         }
         .footer-email{
-        padding-top: 20px;
+            padding-top: 20px;
         }
 
         .icon-container{
             padding-top: 5px;
+            @media only screen and (min-width: $desktop-lg){
+                padding: 0;
+            }
         }
 
         .footer-ig-icon {
@@ -40,11 +61,25 @@
         flex-grow: 1;
         padding: 40px 20px 0px 20px;
 
+        @media only screen and (min-width: $desktop-lg){
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+
+            ul {
+                display: flex;
+            }
+        }
+
         a {
             color: black;
         }
         li {
             padding-top: 5px;
+
+            @media only screen and (min-width: $desktop-lg) {
+                padding-left: 40px;
+            }
         }
 
     }

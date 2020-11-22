@@ -4,11 +4,30 @@
 @import '../../config/breakpoints.scss';
 
 .TopBar{
+    background: $primary;
+    width: 100%;
+
+
+
+
     ul {
         display: none;
 
         @media only screen and (min-width: $desktop-lg){
             display: flex;
+            background: $primary;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        li {
+            padding: 10px 20px;
+        }
+
+        a{
+            color: $appBlack;
         }
     }
 
