@@ -3,8 +3,10 @@
 
 .Contact {
     text-align: left;
+    min-height: calc(100vh - 300px);
 
     .page-header{
+        max-width: 600px;
         width: 85%;
         margin: auto;
         padding-top: 80px;
@@ -18,7 +20,9 @@
     }
 
     .page-body{
+        max-width: 600px;
         width: 85%;
+
         margin: auto;
         .contact-form{
             div {
@@ -27,6 +31,7 @@
 
             input {
                 background: $light;
+                max-width: 420px;
             }
 
             textarea {

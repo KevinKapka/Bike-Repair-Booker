@@ -3,13 +3,12 @@
 @import '../../config/fonts.scss';
 @import '../../config/breakpoints.scss';
 
-.BookCalendar {
+.LeftDrawer {
+    .hamburger{
+        display: block;
 
-    .page-header{
-        width: 85%;
-        margin: auto;
-        padding-top: 60px;
-        text-align: left;
+        @media only screen and (min-width: $desktop-lg){
+            display: none;
+        }
     }
-
 }

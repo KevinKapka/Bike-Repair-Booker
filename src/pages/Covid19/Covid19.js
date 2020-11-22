@@ -2,10 +2,13 @@ import React from 'react';
 import './Covid19.scss';
 import { Link } from "react-router-dom";
 
+import CornerLogo from '../../components/CornerLogo/CornerLogo';
+
 
 function Covid19() {
     return (
         <div className='Covid19'>
+            <CornerLogo />
             <div className='page-header'>
                 <h1>COVID-10 PRECAUTIONS</h1>
             </div>

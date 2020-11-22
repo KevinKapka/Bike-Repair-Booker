@@ -4,6 +4,7 @@ import { servicesCopy } from './servicesData';
 import { Link } from "react-router-dom";
 
 
+import CornerLogo from '../../components/CornerLogo/CornerLogo';
 
 
 function Services({input, setInput}) {
@@ -55,6 +56,7 @@ function Services({input, setInput}) {
 
   return (
     <div className='Services'>
+      <CornerLogo />
 
       <div className='page-header'>
         <h1>Services</h1>

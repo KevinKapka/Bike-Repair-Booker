@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import './Landing.scss'
 
 import { servicesCopy } from '../Services/servicesData';
+import CornerLogo from '../../components/CornerLogo/CornerLogo';
 
 
 
@@ -102,7 +103,7 @@ function Booking({input, setInput}) {
 
   return (
     <div className='BookLanding'>
-
+      <CornerLogo />
       <div className='page-header'>
         <h1>Book Now</h1>
         <p>Select an appointment type.</p>

@@ -6,6 +6,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Landing from "./pages/Landing/Landing";
 import Services from "./pages/Services/Services";
+import About from './pages/About/About'
 import BookLanding from "./pages/Booking/Landing";
 import BookAddress from "./pages/Booking/Address";
 import BookCalendar from "./pages/Booking/Calendar";
@@ -14,6 +15,7 @@ import Contact from './pages/Contact/Contact';
 import Confirmation from './pages/Contact/Confirmation'
 import Footer from './components/Footer/Footer';
 import LeftNav from './components/NavBar/LeftDrawer'
+import TopNav from './components/NavBar/TopBar'
 
 function App() {
   const [input, setInput] = useState({
@@ -37,7 +39,7 @@ function App() {
   const [distance, setDistance] = useState(0);
 
   useEffect(()=>{
-        window.scrollTo({
+      window.scrollTo({
       top: 0,
       left: 0,
       behavior: 'smooth'
@@ -47,20 +49,23 @@ function App() {
   return (
     <div className="App">
       <LeftNav />
-
+      <TopNav />
         <Switch>
           <Route path="/covid19">
             <Covid19 />
           </Route>
           <Route path="/contact/confirm">
             <Confirmation />
-          </Route>           
+          </Route>         
           <Route path="/contact">
             <Contact />
           </Route>         
           <Route path="/services">
             <Services input={input} setInput={setInput}/>
           </Route>
+          <Route path="/about">
+            <About />
+          </Route>          
           <Route path="/booking/address">
             <BookAddress 
             coordinates={coordinates} setCoordinates={setCoordinates} 

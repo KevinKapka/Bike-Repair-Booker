@@ -12,10 +12,12 @@ function Footer() {
         <div className='Footer'>
             <div className='footer-branding'>
                 <img src={logo} alt="site logo. Houston CycleFix" className='logo' />
-                <p className='footer-email'>placeholder@email.com</p>
-                <div className='icon-container'>
-                    <img src={facebookIcon} alt="facebook icon" className='footer-fb-icon' />
-                    <img src={instagramIcon} alt="instagram icon" className='footer-ig-icon' />
+                <div className='foot-sub'>
+                    <p className='footer-email'>placeholder@email.com</p>
+                    <div className='icon-container'>
+                        <img src={facebookIcon} alt="facebook icon" className='footer-fb-icon' />
+                        <img src={instagramIcon} alt="instagram icon" className='footer-ig-icon' />
+                    </div>
                 </div>
             </div>
 

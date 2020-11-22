@@ -4,6 +4,7 @@ import logo from '../../svgs/logo.svg'
 import { Link } from "react-router-dom";
 
 
+
 function Landing() {
 
   const toTop = ()=>{
@@ -49,19 +50,21 @@ function Landing() {
             </li>
             <li>
               <h2>2. REPAIR WITHOUT STRESS</h2>
-              <p>Whether you need a tune-up or a new-in-box bicycle built, book an appointment and we will work around your busy schedule.</p>
+              <p>A skilled bicycle mechanic will complete the repair on-site at your home or office.</p>
             </li>
             <li>
               <h2>3. GET ROLLING AGAIN</h2>
-              <p>Whether you need a tune-up or a new-in-box bicycle built, book an appointment and we will work around your busy schedule.</p>
+              <p>You will be ready to roll again in no time! Tell a friend about your quick and convenient CycleFix experience!</p>
             </li>
           </ol>
-          <Link to='/booking'>
-            <button className='landing-btn-1'>Book Now</button>
-          </Link>
-          <Link to='/contact'>
-            <button className='landing-btn-2'>Contact Us</button>
-          </Link>
+          <div className='button-container'>
+            <Link to='/booking'>
+              <button className='landing-btn-1'>Book Now</button>
+            </Link>
+            <Link to='/contact'>
+              <button className='landing-btn-2'>Contact Us</button>
+            </Link>
+          </div>
           <div className='to-top' onClick={toTop}>
               <p>To-Top</p>
               <div className='arrow-up'></div>

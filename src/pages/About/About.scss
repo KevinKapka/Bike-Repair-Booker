@@ -1,52 +1,49 @@
 @import '../../config/colors.scss';
 @import '../../config/mixins.scss';
 
-.BookAddress {
+.About{
     text-align: left;
     min-height: calc(100vh - 300px);
 
 
-    
-
     .page-header{
         width: 85%;
         max-width: 600px;
+        
         margin: auto;
         padding-top: 80px;
+        padding-bottom: 20px;
         
         h1{
             font-size: 42px;
         }
-        p {
-            padding-bottom: 20px;
-        }
     }
 
-    .form-header {
-        h2 {
-            font-size: 25px;
-            padding-top: 20px;
-        }
-
-        .default-message {
-            padding: 15px 0;
-        }
-
-        .rejection-message {
-            color: $danger;
-        }
-    }
-
-    .page-body{
+    .page-body {
         padding: 0 20px 50px 20px;
         max-width: 600px;
         margin: auto;
 
-        .img-container {
+        .img-container{
+            width: 325px;
             height: 330px;
-            max-width: 327px;
-            margin: auto;
             background: $primary;
+            position: relative;
+            margin: auto;
+
+            .name-logo {
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+            }
+        }
+
+        article {
+            padding-top: 30px;
+        }
+
+        p{
+            padding-top: 15px;
         }
     }
 }

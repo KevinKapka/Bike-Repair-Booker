@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import './Confirmation.scss'
 
+import CornerLogo from '../../components/CornerLogo/CornerLogo';
+
+
 function Confirmation() {
 
     useEffect(()=>{
@@ -14,6 +17,7 @@ function Confirmation() {
 
     return (
         <div className='Confirmation'>
+            <CornerLogo />
             <div className='page-header'>
                 <h1>CONTACT US</h1>   
                 <header>We hear you!</header>

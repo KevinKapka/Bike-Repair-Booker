@@ -7,11 +7,14 @@
     
     .page-header{
         width: 85%;
+        max-width: 600px;
         margin: auto;
         padding-top: 80px;
+        padding-bottom: 20px;
         
         h1{
             font-size: 42px;
+            padding-bottom: 10px;
         }
     }
 
@@ -21,7 +24,8 @@
     }
     .serviceCard {
         background: $light;
-        width: 325px;
+        width: 80%;
+        max-width: 600px;
         margin: 15px auto;
         text-align: left;
 
