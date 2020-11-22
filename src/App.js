@@ -39,7 +39,7 @@ function App() {
   const [distance, setDistance] = useState(0);
 
   useEffect(()=>{
-        window.scrollTo({
+      window.scrollTo({
       top: 0,
       left: 0,
       behavior: 'smooth'
@@ -50,7 +50,6 @@ function App() {
     <div className="App">
       <LeftNav />
       <TopNav />
-      <div className='Wrapper'>
         <Switch>
           <Route path="/covid19">
             <Covid19 />
@@ -85,7 +84,6 @@ function App() {
             <Landing />
           </Route>
         </Switch> 
-      </div>
       <Footer />
     </div>
   );

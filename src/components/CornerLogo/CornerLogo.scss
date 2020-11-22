@@ -3,13 +3,12 @@
 @import '../../config/fonts.scss';
 @import '../../config/breakpoints.scss';
 
-.BookCalendar {
+.CornerLogo{
+    position: absolute;
+    top: 40px;
+    left: 60px;
 
-    .page-header{
-        width: 85%;
-        margin: auto;
-        padding-top: 60px;
-        text-align: left;
+    img {
+        width: 125px;
     }
-
 }

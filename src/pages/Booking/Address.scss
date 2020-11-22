@@ -3,11 +3,14 @@
 
 .BookAddress {
     text-align: left;
+    min-height: calc(100vh - 300px);
+
 
     
 
     .page-header{
         width: 85%;
+        max-width: 600px;
         margin: auto;
         padding-top: 80px;
         
@@ -36,6 +39,8 @@
 
     .page-body{
         padding: 0 20px 50px 20px;
+        max-width: 600px;
+        margin: auto;
 
         .img-container {
             height: 330px;
