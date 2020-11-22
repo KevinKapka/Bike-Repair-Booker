@@ -14,6 +14,7 @@ import Contact from './pages/Contact/Contact';
 import Confirmation from './pages/Contact/Confirmation'
 import Footer from './components/Footer/Footer';
 import LeftNav from './components/NavBar/LeftDrawer'
+import TopNav from './components/NavBar/TopBar'
 
 function App() {
   const [input, setInput] = useState({
@@ -47,6 +48,7 @@ function App() {
   return (
     <div className="App">
       <LeftNav />
+      <TopNav />
 
         <Switch>
           <Route path="/covid19">

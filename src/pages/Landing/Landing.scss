@@ -1,6 +1,7 @@
 @import '../../config/mixins.scss';
 @import '../../config/colors.scss';
 @import '../../config/fonts.scss';
+@import '../../config/breakpoints.scss';
 
 
 .Landing {
@@ -21,50 +22,81 @@
         flex-direction: column;
         justify-content: flex-end;
 
-    .splash-img-container {
-        height: 400px;
-        width: 100%;
-        background: white;
-        margin-bottom: 20px;
-    }
-
-    .splash-logo-container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        padding-bottom: 20px;
-        
-        #splash-logo {
-            width: 279px;
-            
+        @media only screen and (min-width: $desktop-lg){
+            justify-content: center;
+            align-items: center;
         }
-        h1{
-            padding-top: 10px;
-        }
-    }
 
-    .splash-button-container {
-        width: 100%;
-        display: flex;
-        padding-bottom: 40px;
-        .landing-btn-1 {
-            @include primaryButton();
+        .splash-img-container {
+            height: 400px;
+            width: 100%;
             background: white;
-            margin: 10px;
+            margin-bottom: 20px;
+
+            @media only screen and (min-width: $desktop-lg){
+                display: none;
+            }
         }
-        .landing-btn-2{
-            @include primaryButton();
-            border: 1px solid white;
-            margin: 10px;
-            background: none;
-            color: white;
-            width: auto;
+
+        .splash-logo-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            padding-bottom: 20px;
+
+        
+            #splash-logo {
+                width: 279px;
+                @media only screen and (min-width: $desktop-lg){
+                    width: 600px;
+                }
+            }
+
+            h1{
+            padding-top: 10px;
+            }
+
+            @media only screen and (min-width: $desktop-lg){
+                width: 600px;
+                margin: 0 auto;
+                padding-top: 150px;
+            }
 
         }
+
+        .splash-button-container {
+            width: 100%;
+            display: flex;
+            padding-bottom: 40px;
+            .landing-btn-1 {
+                @include primaryButton();
+                background: white;
+                margin: 10px;
+
+                @media only screen and (min-width: $desktop-lg){
+                    margin: 10px 0;
+                }
+            }
+            .landing-btn-2{
+                @include primaryButton();
+                border: 1px solid white;
+                margin: 10px;
+                background: none;
+                color: white;
+                width: auto;
+
+
+            }
+
+
+            @media only screen and (min-width: $desktop-lg){
+                width: 600px;
+                margin: 0 auto;
+            }
+        }
+
     }
-
-  }
 
 
   .info-container{
@@ -74,13 +106,48 @@
     padding: 20px;
     position: relative;
 
+    @media only screen and (min-width: $desktop-lg){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        ol {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                margin: 20px 50px;
+            }
+        }
+    }
+
     h1{
         font-size:42px;
         margin: 20px 0 ;
+
+        @media only screen and (min-width: $desktop-lg){
+            font-size: 67px;
+            margin-bottom: 80px;
+        }
     }
 
     h2{
-        font-size: 26px
+        font-size: 26px;
+        
+        @media only screen and (min-width: $desktop-lg){
+            font-size: 40px;
+        }
     }
 
     li{
@@ -89,8 +156,19 @@
         align-items: flex-start;
         margin-bottom: 40px;
 
+        @media only screen and (min-width: $desktop-lg){
+            width: 327px;
+        }
+
         p{
             text-align: left;
+            
+            @media only screen and (min-width: $desktop-lg){
+            width: 327px;
+            font-size: 27px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
         }
     }
 
@@ -107,6 +185,7 @@
         background: none;
         color: $secondary;
         width: auto;
+
 
     }
     .to-top{

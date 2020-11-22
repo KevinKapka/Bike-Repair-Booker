@@ -1,0 +1,14 @@
+@import '../../config/mixins.scss';
+@import '../../config/colors.scss';
+@import '../../config/fonts.scss';
+@import '../../config/breakpoints.scss';
+
+.LeftDrawer {
+    .hamburger{
+        display: block;
+
+        @media only screen and (min-width: $desktop-lg){
+            display: none;
+        }
+    }
+}

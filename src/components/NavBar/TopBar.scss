@@ -1,0 +1,15 @@
+@import '../../config/mixins.scss';
+@import '../../config/colors.scss';
+@import '../../config/fonts.scss';
+@import '../../config/breakpoints.scss';
+
+.TopBar{
+    ul {
+        display: none;
+
+        @media only screen and (min-width: $desktop-lg){
+            display: flex;
+        }
+    }
+
+}
