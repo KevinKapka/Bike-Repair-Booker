@@ -2,7 +2,6 @@
 
 .Confirmation {
     text-align: left;
-    min-height: calc(100vh - 300px);
 
 
     .page-header{
@@ -10,6 +9,8 @@
         width: 85%;
         margin: auto;
         padding-top: 80px;
+        min-height: calc(100vh - 250px);
+
         
         h1{
             font-size: 42px;

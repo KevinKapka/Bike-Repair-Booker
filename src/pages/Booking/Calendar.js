@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import './Calendar.scss'
 import backButton from '../../svgs/backButton.svg';
 import Calender from "../../components/Calendar";
+import CornerLogo from '../../components/CornerLogo/CornerLogo';
+
 
 function Calendar({input}) {
     useEffect(()=>{
@@ -16,6 +18,7 @@ function Calendar({input}) {
 
     return (
         <div className='BookCalendar'>
+          <CornerLogo />
             <div className='page-header'>
               <Calender input={input} />
             </div>

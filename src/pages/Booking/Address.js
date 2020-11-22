@@ -6,6 +6,8 @@ import './Address.scss'
 import backButton from '../../svgs/backButton.svg'
 import Form from "../../components/Form";
 import { distanceCalculator } from "../../utilities/distanceCalculator";
+import CornerLogo from '../../components/CornerLogo/CornerLogo';
+
 
 function Address({coordinates, setCoordinates, distance, setDistance, input, setInput}) {
 
@@ -23,7 +25,7 @@ function Address({coordinates, setCoordinates, distance, setDistance, input, set
 
     return (
         <div className='BookAddress'>
-
+            <CornerLogo />
             <div className='page-header'>
                 <Link to='/booking'>
                     <img src={backButton} alt='back button'/>

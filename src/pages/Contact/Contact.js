@@ -4,6 +4,8 @@ import { Redirect } from "react-router-dom";
 import emailjs from 'emailjs-com';
 
 import './Contact.scss'
+import CornerLogo from '../../components/CornerLogo/CornerLogo';
+
 
 function Contact() {
     const [ isSent, setIsSent ] = useState(false)
@@ -36,6 +38,7 @@ function Contact() {
 
     return (
         <div className='Contact'>
+            <CornerLogo />
             <div className='page-header'>
                 <h1>CONTACT US</h1>   
                 <h2>Still have questions?</h2>

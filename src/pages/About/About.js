@@ -2,10 +2,13 @@ import React from 'react'
 import './About.scss'
 import nameLogo from '../../svgs/nameLogo.svg'
 
+import CornerLogo from '../../components/CornerLogo/CornerLogo';
+
+
 function About() {
     return (
         <div className='About'>
-
+            <CornerLogo />
             <div className='page-header'>
                 <h1>MEET CYCLEFIX</h1>
             </div>
