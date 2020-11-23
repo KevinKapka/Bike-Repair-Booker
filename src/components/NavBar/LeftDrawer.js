@@ -9,7 +9,7 @@ import './LeftDrawer.scss'
 
 import Hamburger from './Hamburger'
 
-function LeftDrawer() {
+function LeftDrawer({color}) {
     const [open, isOpen] = useState(false)
     const [ display, setDisplay ] = useState('block')
 
@@ -36,7 +36,7 @@ function LeftDrawer() {
     return (
         <div className='LeftDrawer'>
             <div onClick={()=> isOpen(true)} className='hamburger'>
-                {!open? <Hamburger/>: null}
+                {!open? <Hamburger color={color}/>: null}
             </div>
         <SlidingPane
             isOpen={open}
@@ -46,7 +46,9 @@ function LeftDrawer() {
             onRequestClose={() => isOpen(false)}
             className='custom-slide'
         >
-            <img src={logo} alt="site logo. Houston CycleFix" className='logo' />
+            <Link to='/'>
+                <img src={logo} alt="site logo. Houston CycleFix" className='logo' />
+            </Link>
             <ul style={styles.listContainer}>
                 <li style={styles.listItem} onClick={()=> isOpen(false)}>
                 <Link style={styles.link} to="/booking">Book Now</Link>

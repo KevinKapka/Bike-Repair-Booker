@@ -1,16 +1,7 @@
 import React from 'react'
 
-function Hamburger({handleNavClick}) {
-    return (
-    <div style={styles.container} onClick={handleNavClick}>
-      <span style={styles.lines}/>
-      <span style={styles.lines}/>
-      <span style={styles.lines}/>
-    </div>
-    )
-}
-
-const styles = {
+function Hamburger({handleNavClick, color}) {
+    const styles = {
     container:{
         position: 'fixed',
         left: '0',
@@ -27,11 +18,23 @@ const styles = {
         height: '2px',
         width: '20px',
         margin: '4px 0',
-        backgroundColor: 'black',
+        backgroundColor: color,
         display: 'block',
         transition: 'all 500ms ease',
         boarderRadius: '10px',
     }
 }
+
+
+    return (
+    <div style={styles.container} onClick={handleNavClick}>
+      <span style={styles.lines}/>
+      <span style={styles.lines}/>
+      <span style={styles.lines}/>
+    </div>
+    )
+}
+
+
 
 export default Hamburger

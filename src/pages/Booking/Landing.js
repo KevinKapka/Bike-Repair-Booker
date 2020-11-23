@@ -6,19 +6,22 @@ import './Landing.scss'
 
 import { servicesCopy } from '../Services/servicesData';
 import CornerLogo from '../../components/CornerLogo/CornerLogo';
+import TopNav from '../../components/NavBar/TopBar'
 
 
 
 
-function Booking({input, setInput}) {
+function Booking({input, setInput, setNavColor}) {
   const [ clicked, setClicked ] = useState('')
 
     useEffect(()=>{
-        window.scrollTo({
+      window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth'
-    })
+      behavior: 'smooth'})
+
+      setNavColor('#000812')
+
     }, [])
 
   const handleClick = (name)=>{
@@ -70,6 +73,7 @@ function Booking({input, setInput}) {
   }else {
     return(
       <Accordion>
+
       <div key={service.header} className='serviceCard'>
         <Accordion.Toggle as={Card.Header} eventKey='0'>
         <div className={clicked === service.header ? 'header-container-open': 'header-container-closed'} onClick={()=> handleClick(service.header)}>
@@ -104,6 +108,7 @@ function Booking({input, setInput}) {
   return (
     <div className='BookLanding'>
       <CornerLogo />
+      <TopNav />
       <div className='page-header'>
         <h1>Book Now</h1>
         <p>Select an appointment type.</p>

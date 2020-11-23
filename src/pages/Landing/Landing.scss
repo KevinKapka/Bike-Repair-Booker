@@ -29,6 +29,13 @@
             align-items: center;
         }
 
+        .nav{
+            a {
+                color: $appWhite;
+            }
+            padding-bottom: 80px;
+        }
+
         .splash-img-container {
             height: 400px;
             width: 100%;
@@ -72,7 +79,7 @@
         .splash-button-container {
             width: 100%;
             display: flex;
-            padding-bottom: 40px;
+            padding-bottom: 80px;
             .landing-btn-1 {
                 @include primaryButton();
                 background: $secondary;
