@@ -11,7 +11,9 @@ function Footer() {
     return (
         <div className='Footer'>
             <div className='footer-branding'>
-                <img src={logo} alt="site logo. Houston CycleFix" className='logo' />
+                <Link to='/'>
+                    <img src={logo} alt="site logo. Houston CycleFix" className='logo' />
+                </Link>
                 <div className='foot-sub'>
                     <p className='footer-email'>placeholder@email.com</p>
                     <div className='icon-container'>
