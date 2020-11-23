@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
-import logo from '../../svgs/logo.svg';
+import logo from '../../svgs/logo-black.svg';
 import { Link } from "react-router-dom";
 import './LeftDrawer.scss'
 

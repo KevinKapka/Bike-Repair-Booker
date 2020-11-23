@@ -32,17 +32,17 @@
         border-radius: none;
 
         .header-container-closed{
-            background: $primary;
+            background: $light;
             display: flex;
             flex-direction: column;
             padding: 12px 0;
 
             &:hover {
-                background: $dark;
-                color: $light;
+                background: $primary;
+                color: $appWhite;
 
                 .arrow-right {
-                    border-left: 15px solid $light;
+                    border-left: 15px solid $appWhite;
                 }
             }
 
@@ -79,7 +79,7 @@
         }
 
         .header-container-open{
-            background: $dark;
+            background: $primary;
             display: flex;
             flex-direction: column;
             padding: 12px 0;

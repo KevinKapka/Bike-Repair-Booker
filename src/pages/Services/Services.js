@@ -54,6 +54,14 @@ function Services({input, setInput}) {
   }
 })
 
+  const toTop = ()=>{
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <div className='Services'>
       <CornerLogo />
@@ -67,7 +75,10 @@ function Services({input, setInput}) {
       <div className='card-container'>
         {servicesCards}
       </div>
-
+      <div className='to-top' onClick={toTop}>
+              <p>To-Top</p>
+              <div className='arrow-up'></div>
+      </div>
     </div>
   );
 }

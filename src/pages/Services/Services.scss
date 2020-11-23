@@ -3,6 +3,32 @@
 
 .Services {
     text-align: left;
+    position: relative;
+
+    .to-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        height: 35px;
+        width: 87px;
+        background: $primary;
+
+        .arrow-up {
+            width: 0; 
+            height: 0; 
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            
+            border-bottom: 12px solid $secondary;
+            margin-left: 5px
+
+            
+        }
+    }
 
     
     .page-header{
@@ -21,6 +47,7 @@
 
     .card-container{
         width: 100%;
+        padding-bottom: 40px;
     }
     .serviceCard {
         background: $light;
@@ -35,6 +62,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 12px 0;
+            color: $appWhite;
 
             .header {
                 font-size: 26px;
@@ -76,6 +104,8 @@
 
         button {
             @include primaryButton();
+            background: $secondary;
+            color: $appWhite;
             margin-top: 10px;
         }
 

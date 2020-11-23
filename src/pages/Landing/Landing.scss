@@ -10,7 +10,7 @@
         
 
     .splash-container{
-        background: #c4c4c4;
+        background: $primary;
         height: 758px;
         width: 100%;
         padding: 20px;
@@ -54,7 +54,9 @@
             }
 
             h1{
-            padding-top: 10px;
+                padding-top: 10px;
+                font-size: 35px;
+                color: $appWhite;
             }
 
             @media only screen and (min-width: $desktop-lg){
@@ -71,8 +73,9 @@
             padding-bottom: 40px;
             .landing-btn-1 {
                 @include primaryButton();
-                background: white;
+                background: $secondary;
                 margin: 10px;
+                color: $appWhite;
 
                 @media only screen and (min-width: $desktop-lg){
                     margin: 10px 0;
@@ -80,10 +83,9 @@
             }
             .landing-btn-2{
                 @include primaryButton();
-                border: 1px solid white;
                 margin: 10px;
                 background: none;
-                color: white;
+                color: $appWhite;
                 width: auto;
 
 
@@ -118,6 +120,7 @@
             align-items: flex-start;
             justify-content: space-around;
             width: 100%;
+            color: $appBlack;
         }
 
         .button-container {
@@ -155,6 +158,7 @@
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 40px;
+        color: $appBlack;
 
         @media only screen and (min-width: $desktop-lg){
             width: 327px;
@@ -177,13 +181,14 @@
         background: white;
         margin: 10px;
         background: $secondary;
+        color: $appWhite;
     }
     .landing-btn-2{
         @include primaryButton();
-        border: 1px solid $secondary;
+        border: 1px solid $primary;
         margin: 10px;
         background: none;
-        color: $secondary;
+        color: $primary;
         width: auto;
 
 
@@ -206,7 +211,7 @@
             border-left: 6px solid transparent;
             border-right: 6px solid transparent;
             
-            border-bottom: 12px solid white;
+            border-bottom: 12px solid $secondary;
             margin-left: 5px
 
             

@@ -7,6 +7,7 @@
     height: 258px;
     background: $primary;
     display: flex;
+    color: $appWhite;
 
     .footer-branding {
         display: flex;
@@ -16,6 +17,7 @@
         height: 100%;
         flex-grow: 1;
         padding: 20px;
+
 
         @media only screen and (min-width: $desktop-lg){
             flex-direction: row;
@@ -30,12 +32,20 @@
 
         .logo{
             margin-top: 20px;
-
+            color: $appWhite;
+            
             @media only screen and (min-width: $desktop-lg){
                 width: 220px;
                 margin:0;
             }
         }
+
+        .splash-logo-container {
+            img {
+                color: $appWhite;
+            }
+        }
+
         .footer-email{
             padding-top: 20px;
         }
@@ -72,7 +82,7 @@
         }
 
         a {
-            color: black;
+            color: $appWhite;
         }
         li {
             padding-top: 5px;

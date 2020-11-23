@@ -30,6 +30,7 @@ const styles = {
         backgroundColor: 'black',
         display: 'block',
         transition: 'all 500ms ease',
+        boarderRadius: '10px',
     }
 }
 
