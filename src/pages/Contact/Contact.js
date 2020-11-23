@@ -7,6 +7,10 @@ import './Contact.scss'
 import CornerLogo from '../../components/CornerLogo/CornerLogo';
 import TopNav from '../../components/NavBar/TopBar'
 
+const SERVICE_KEY = process.env.REACT_APP_EMAIL_SERVICE_KEY;
+const TEMPLATE_KEY = process.env.REACT_APP_EMAIL_TEMPLATE_KEY;
+const USER_KEY = process.env.REACT_APP_EMAIL_USER_KEY;
+
 
 function Contact({ setNavColor }) {
     const [ isSent, setIsSent ] = useState(false)
@@ -24,7 +28,7 @@ function Contact({ setNavColor }) {
     function sendEmail(e){
         e.preventDefault();
         console.log('e.target', e.target)
-        emailjs.sendForm('service_5qhb5bm', 'template_g3rbt0j', e.target, 'user_1tTUVlfVHJ0QgAOqETSmf')
+        emailjs.sendForm( SERVICE_KEY , TEMPLATE_KEY, e.target, USER_KEY)
         .then((result) => {
             console.log(result.text);
             setIsSent(true)

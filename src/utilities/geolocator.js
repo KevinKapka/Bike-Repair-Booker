@@ -1,9 +1,12 @@
 import React from "react";
 import Geocode from "react-geocode";
 
+const GECODE_KEY = process.env.REACT_APP_GOOGLE_GEOCODE_KEY;
+
+
 export function geolocator(input, coordinates, setCoordinates) {
   // set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
-  Geocode.setApiKey("AIzaSyCeK_g8ks2eNibVrOZToD3rGSN1IYuN__U");
+  Geocode.setApiKey(GECODE_KEY);
 
   // set response language. Defaults to english.
   Geocode.setLanguage("en");

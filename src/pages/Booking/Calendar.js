@@ -8,7 +8,9 @@ import CornerLogo from '../../components/CornerLogo/CornerLogo';
 import TopNav from '../../components/NavBar/TopBar'
 
 
-function Calendar({input, setNavColor }) {
+
+
+function Calendar({ input, setNavColor }) {
     useEffect(()=>{
         window.scrollTo({
       top: 0,
@@ -25,9 +27,7 @@ function Calendar({input, setNavColor }) {
             <div className='page-header'>
               <Calender input={input} />
             </div>
-            <div className='page-body'>
-              
-            </div>
+            <div className='page-body'></div>
                 
 
         </div>

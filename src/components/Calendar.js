@@ -3,6 +3,8 @@
 import React from "react";
 import { InlineWidget } from "react-calendly";
 
+const CALENDLY_URL = process.env.REACT_APP_CALENDLY_URL
+
 const styles = {
   height: "1000px",
 };
@@ -27,7 +29,7 @@ function Calendly({ input }) {
   return (
     <div>
       <InlineWidget
-        url="https://calendly.com/trtincher12/bicycle-repair"
+        url={CALENDLY_URL}
         styles={styles}
         pageSettings={pageSettings}
         prefill={prefill}
