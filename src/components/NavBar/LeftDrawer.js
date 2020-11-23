@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
-import logo from '../../svgs/logo.svg';
+import logo from '../../svgs/logo-black.svg';
 import { Link } from "react-router-dom";
 import './LeftDrawer.scss'
 
@@ -29,8 +29,6 @@ function LeftDrawer() {
         },
         link: {
             color: 'black',
-            
-
         }
 
     }
@@ -46,6 +44,7 @@ function LeftDrawer() {
             width="200px"
             hideHeader={true}
             onRequestClose={() => isOpen(false)}
+            className='custom-slide'
         >
             <img src={logo} alt="site logo. Houston CycleFix" className='logo' />
             <ul style={styles.listContainer}>

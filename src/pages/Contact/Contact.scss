@@ -14,6 +14,11 @@
         h1{
             font-size: 42px;
         }
+
+        .header {
+            font-size: 26px;
+            padding-top: 20px;
+        }
         p {
             padding-bottom: 20px;
         }
@@ -49,7 +54,7 @@
                 @include primaryButton();
                 background: $secondary;
                 width: auto;
-                color: $appBlack;
+                color: $appWhite;
                 margin-bottom: 50px;
             }
 

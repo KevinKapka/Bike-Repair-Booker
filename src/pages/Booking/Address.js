@@ -42,7 +42,7 @@ function Address({coordinates, setCoordinates, distance, setDistance, input, set
                 <div className='form-header'>
                     <h2>Service Location</h2>
                     <p className='default-message'>An address is required to continue booking.
-Enter the address at which the maintenance will be completed. </p>
+Enter the address at which the repair will be completed. </p>
                     {distance > 15? <p className='rejection-message'>We’re sorry! This address is unfortunately outside of our service area.
 If you think you are receiving this message in error, please contact us.</p>: null}
                 </div>

@@ -6,19 +6,17 @@
 .TopBar{
     width: 100%;
 
-
-
-
     ul {
         display: none;
 
-        @media only screen and (min-width: $desktop-lg){
+
+        @media only screen and (min-width: $desktop-sm){
             display: flex;
-            background: transparent;
+            background: rgb(252, 252, 252);
             width: 100%;
             justify-content: center;
             align-items: center;
-            position: fixed;
+            
 
         }
 

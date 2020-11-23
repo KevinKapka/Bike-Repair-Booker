@@ -7,19 +7,19 @@ function TopBar() {
         <div className='TopBar'>
             <ul >
                 <li>
-                <Link to="/booking">Book Now</Link>
+                <Link to="/booking"><p>Book Now</p></Link>
                 </li>
                 <li>
-                <Link to="/services">Services</Link>
+                <Link to="/services"><p>Services</p></Link>
                 </li >
                 <li>
-                <Link to="/about">Meet CycleFix</Link>
+                <Link to="/about"><p>Meet CycleFix</p></Link>
                 </li>
                 <li>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact"><p>Contact Us</p></Link>
                 </li>
                 <li>
-                <Link  to="/covid19">COVID-19</Link>
+                <Link  to="/covid19"><p>COVID-19</p></Link>
                 </li>
          </ul>
         </div>

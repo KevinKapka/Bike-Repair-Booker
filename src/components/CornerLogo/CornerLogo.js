@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../svgs/logo.svg'
+import logo from '../../svgs/logo-black.svg'
 import './CornerLogo.scss'
 
 

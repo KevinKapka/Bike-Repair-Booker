@@ -10,7 +10,9 @@
         
 
     .splash-container{
-        background: #c4c4c4;
+        background: url(../../images/HeroHCF.jpg) $primary;
+        background-size: cover;
+        background-position: center;
         height: 758px;
         width: 100%;
         padding: 20px;
@@ -22,7 +24,7 @@
         flex-direction: column;
         justify-content: flex-end;
 
-        @media only screen and (min-width: $desktop-lg){
+        @media only screen and (min-width: $desktop-sm){
             justify-content: center;
             align-items: center;
         }
@@ -33,7 +35,7 @@
             background: white;
             margin-bottom: 20px;
 
-            @media only screen and (min-width: $desktop-lg){
+            @media only screen and (min-width: $desktop-sm){
                 display: none;
             }
         }
@@ -48,16 +50,18 @@
         
             #splash-logo {
                 width: 279px;
-                @media only screen and (min-width: $desktop-lg){
+                @media only screen and (min-width: $desktop-sm){
                     width: 600px;
                 }
             }
 
             h1{
-            padding-top: 10px;
+                padding-top: 10px;
+                font-size: 35px;
+                color: $appWhite;
             }
 
-            @media only screen and (min-width: $desktop-lg){
+            @media only screen and (min-width: $desktop-sm){
                 width: 600px;
                 margin: 0 auto;
                 padding-top: 150px;
@@ -71,26 +75,26 @@
             padding-bottom: 40px;
             .landing-btn-1 {
                 @include primaryButton();
-                background: white;
+                background: $secondary;
                 margin: 10px;
+                color: $appWhite;
 
-                @media only screen and (min-width: $desktop-lg){
+                @media only screen and (min-width: $desktop-sm){
                     margin: 10px 0;
                 }
             }
             .landing-btn-2{
                 @include primaryButton();
-                border: 1px solid white;
                 margin: 10px;
                 background: none;
-                color: white;
+                color: $appWhite;
                 width: auto;
 
 
             }
 
 
-            @media only screen and (min-width: $desktop-lg){
+            @media only screen and (min-width: $desktop-sm){
                 width: 600px;
                 margin: 0 auto;
             }
@@ -106,7 +110,7 @@
     padding: 20px;
     position: relative;
 
-    @media only screen and (min-width: $desktop-lg){
+    @media only screen and (min-width: $desktop-sm){
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -118,6 +122,7 @@
             align-items: flex-start;
             justify-content: space-around;
             width: 100%;
+            color: $appBlack;
         }
 
         .button-container {
@@ -136,18 +141,24 @@
         font-size:42px;
         margin: 20px 0 ;
 
-        @media only screen and (min-width: $desktop-lg){
-            font-size: 67px;
+        @media only screen and (min-width: $desktop-sm){
             margin-bottom: 80px;
         }
+
+        @media only screen and (min-width: $desktop-lg){
+            font-size: 65px;
+        }        
     }
 
     h2{
         font-size: 26px;
         
+        @media only screen and (min-width: $desktop-sm){
+            font-size: 30px;
+        }
         @media only screen and (min-width: $desktop-lg){
             font-size: 40px;
-        }
+        }         
     }
 
     li{
@@ -155,20 +166,26 @@
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 40px;
+        color: $appBlack;
 
-        @media only screen and (min-width: $desktop-lg){
+        @media only screen and (min-width: $desktop-sm){
             width: 327px;
         }
+
 
         p{
             text-align: left;
             
-            @media only screen and (min-width: $desktop-lg){
-            width: 327px;
-            font-size: 27px;
+            @media only screen and (min-width: $desktop-sm){
+            width: 280px;
+            font-size: 16px;
             text-align: justify;
             text-justify: inter-word;
-        }
+            }
+            @media only screen and (min-width: $desktop-lg){
+                font-size: 24px;
+                width: 370px;
+            }             
         }
     }
 
@@ -177,13 +194,14 @@
         background: white;
         margin: 10px;
         background: $secondary;
+        color: $appWhite;
     }
     .landing-btn-2{
         @include primaryButton();
-        border: 1px solid $secondary;
+        border: 1px solid $primary;
         margin: 10px;
         background: none;
-        color: $secondary;
+        color: $primary;
         width: auto;
 
 
@@ -206,7 +224,7 @@
             border-left: 6px solid transparent;
             border-right: 6px solid transparent;
             
-            border-bottom: 12px solid white;
+            border-bottom: 12px solid $secondary;
             margin-left: 5px
 
             
