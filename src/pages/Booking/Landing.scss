@@ -163,6 +163,8 @@
 
         button {
             @include primaryButton();
+            background: $secondary;
+            color: $appWhite;
             margin-top: 10px;
         }
 
