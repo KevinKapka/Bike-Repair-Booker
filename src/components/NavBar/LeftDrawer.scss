@@ -7,8 +7,22 @@
     .hamburger{
         display: block;
 
-        @media only screen and (min-width: $desktop-lg){
+
+
+        @media only screen and (min-width: $desktop-sm){
             display: none;
         }
     }
+
+    .custom-slide{
+        background: green;
+
+        a {
+            &:hover {
+                color: green;
+            }
+        }
+    }
+
+
 }

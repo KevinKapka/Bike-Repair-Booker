@@ -29,8 +29,6 @@ function LeftDrawer() {
         },
         link: {
             color: 'black',
-            
-
         }
 
     }
@@ -46,6 +44,7 @@ function LeftDrawer() {
             width="200px"
             hideHeader={true}
             onRequestClose={() => isOpen(false)}
+            className='custom-slide'
         >
             <img src={logo} alt="site logo. Houston CycleFix" className='logo' />
             <ul style={styles.listContainer}>

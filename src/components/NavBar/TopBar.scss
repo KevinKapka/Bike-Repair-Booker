@@ -10,7 +10,7 @@
         display: none;
 
 
-        @media only screen and (min-width: $desktop-lg){
+        @media only screen and (min-width: $desktop-sm){
             display: flex;
             background: rgb(252, 252, 252);
             width: 100%;

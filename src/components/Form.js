@@ -85,7 +85,8 @@ function BookingForm({ input, setInput, coordinates, setCoordinates, distance, s
               background: '#EB6E1f',
               borderRadius: '20px',
               marginTop: '10px',
-              color: '#FCFCFC'
+              color: '#FCFCFC',
+              marginTop: '20px',
         }}>
           Continue
       </button>
