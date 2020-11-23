@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.scss'
 import nameLogo from '../../svgs/nameLogo.svg'
 
 import CornerLogo from '../../components/CornerLogo/CornerLogo';
+import TopNav from '../../components/NavBar/TopBar'
 
 
-function About() {
+function About({ setNavColor }) {
+    
+  useEffect(()=>{
+    setNavColor('#000812')
+  }, [])
+
     return (
         <div className='About'>
             <CornerLogo />
+            <TopNav />
             <div className='page-header'>
                 <h1>MEET CYCLEFIX</h1>
             </div>

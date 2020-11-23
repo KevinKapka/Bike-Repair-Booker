@@ -15,7 +15,6 @@ import Contact from './pages/Contact/Contact';
 import Confirmation from './pages/Contact/Confirmation'
 import Footer from './components/Footer/Footer';
 import LeftNav from './components/NavBar/LeftDrawer'
-import TopNav from './components/NavBar/TopBar'
 
 function App() {
   const [input, setInput] = useState({
@@ -37,6 +36,7 @@ function App() {
     },
   });
   const [distance, setDistance] = useState(0);
+  const [navColor, setNavColor] = useState('#000812')
 
   useEffect(()=>{
       window.scrollTo({
@@ -48,23 +48,22 @@ function App() {
 
   return (
     <div className="App">
-      <LeftNav />
-      <TopNav />
+      <LeftNav color={navColor}/>
         <Switch>
           <Route path="/covid19">
-            <Covid19 />
+            <Covid19 setNavColor={setNavColor}/>
           </Route>
           <Route path="/contact/confirm">
-            <Confirmation />
+            <Confirmation setNavColor={setNavColor}/>
           </Route>         
           <Route path="/contact">
-            <Contact />
+            <Contact setNavColor={setNavColor}/>
           </Route>         
           <Route path="/services">
-            <Services input={input} setInput={setInput}/>
+            <Services input={input} setInput={setInput} setNavColor={setNavColor}/>
           </Route>
           <Route path="/about">
-            <About />
+            <About setNavColor={setNavColor}/>
           </Route>          
           <Route path="/booking/address">
             <BookAddress 
@@ -72,16 +71,18 @@ function App() {
             distance={distance}
             setDistance={setDistance} 
             input={input} 
-            setInput={setInput}/>
+            setInput={setInput}
+            setNavColor={setNavColor}
+            />
           </Route>
           <Route path="/booking/calendar">
-            <BookCalendar input={input} />
+            <BookCalendar input={input} setNavColor={setNavColor}/>
           </Route>
           <Route path="/booking">
-            <BookLanding input={input} setInput={setInput}/>
+            <BookLanding input={input} setInput={setInput} setNavColor={setNavColor}/>
           </Route>
           <Route path="/">
-            <Landing />
+            <Landing setNavColor={setNavColor}/>
           </Route>
         </Switch> 
       <Footer />

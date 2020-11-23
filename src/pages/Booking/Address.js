@@ -7,9 +7,11 @@ import backButton from '../../svgs/backButton.svg'
 import Form from "../../components/Form";
 import { distanceCalculator } from "../../utilities/distanceCalculator";
 import CornerLogo from '../../components/CornerLogo/CornerLogo';
+import TopNav from '../../components/NavBar/TopBar'
 
 
-function Address({coordinates, setCoordinates, distance, setDistance, input, setInput}) {
+
+function Address({coordinates, setCoordinates, distance, setDistance, input, setInput, setNavColor}) {
 
     // useEffect(() => {
     //   distanceCalculator(coordinates, setDistance);
@@ -21,11 +23,13 @@ function Address({coordinates, setCoordinates, distance, setDistance, input, set
       left: 0,
       behavior: 'smooth'
     })
+        setNavColor('#000812')
     }, [])
 
     return (
         <div className='BookAddress'>
             <CornerLogo />
+            <TopNav />
             <div className='page-header'>
                 <Link to='/booking'>
                     <img src={backButton} alt='back button'/>

@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Covid19.scss';
 import { Link } from "react-router-dom";
 
 import CornerLogo from '../../components/CornerLogo/CornerLogo';
+import TopNav from '../../components/NavBar/TopBar'
 
 
-function Covid19() {
+
+function Covid19({ setNavColor }) {
+    useEffect(()=>{
+        setNavColor('#000812')
+    }, [])
+
     return (
         <div className='Covid19'>
             <CornerLogo />
+            <TopNav />
+
             <div className='page-header'>
                 <h1>COVID-10 PRECAUTIONS</h1>
             </div>

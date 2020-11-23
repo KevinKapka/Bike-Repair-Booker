@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Landing.scss";
 import logo from '../../svgs/logo.svg'
 import { Link } from "react-router-dom";
 
+import TopNav from '../../components/NavBar/TopBar'
+import Hamburger from '../../components/NavBar/Hamburger'
 
 
-function Landing() {
+
+
+function Landing({ setNavColor }) {
+  useEffect(()=>{
+    setNavColor('#FCFCFC')
+  }, [])
 
   const toTop = ()=>{
     window.scrollTo({
@@ -24,9 +31,9 @@ function Landing() {
   return (
     <div className="Landing">
       <div className="splash-container">
-        {/* <div className="splash-img-container">
-          <img src="" alt="splash-img" id="splash-img" />
-        </div>   */}
+        <div className='nav'>
+          <TopNav />
+        </div>
         <div className='splash-logo-container'>
           <img src={logo} alt="site logo. Houston CycleFix" id="splash-logo" />
           <h1>Mobile Bicycle Repair</h1>

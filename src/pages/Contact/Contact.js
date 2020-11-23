@@ -5,9 +5,10 @@ import emailjs from 'emailjs-com';
 
 import './Contact.scss'
 import CornerLogo from '../../components/CornerLogo/CornerLogo';
+import TopNav from '../../components/NavBar/TopBar'
 
 
-function Contact() {
+function Contact({ setNavColor }) {
     const [ isSent, setIsSent ] = useState(false)
 
     useEffect(()=>{
@@ -16,6 +17,8 @@ function Contact() {
       left: 0,
       behavior: 'smooth'
     })
+
+        setNavColor('#000812')
     }, [])
 
     function sendEmail(e){
@@ -39,6 +42,8 @@ function Contact() {
     return (
         <div className='Contact'>
             <CornerLogo />
+            <TopNav />
+
             <div className='page-header'>
                 <h1>CONTACT US</h1>   
                 <p className='header'>Still have questions?</p>
@@ -65,7 +70,7 @@ function Contact() {
                         <Form.Control name='phone' />
                     </Form.Group>
                     <Form.Group controlId="formBasicMessage">
-                        <Form.Label><p>How can we help<span>*</span></p></Form.Label>
+                        <Form.Label><p>How can we help?<span>*</span></p></Form.Label>
                         <Form.Control as='textarea' rows={4} name='message'/>
                     </Form.Group>
                     <Button variant="primary" type="submit">

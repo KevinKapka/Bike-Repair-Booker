@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import './Confirmation.scss'
 
 import CornerLogo from '../../components/CornerLogo/CornerLogo';
+import TopNav from '../../components/NavBar/TopBar'
 
 
 function Confirmation() {
@@ -18,6 +19,7 @@ function Confirmation() {
     return (
         <div className='Confirmation'>
             <CornerLogo />
+            <TopNav />
             <div className='page-header'>
                 <h1>CONTACT US</h1>   
                 <header>We hear you!</header>
