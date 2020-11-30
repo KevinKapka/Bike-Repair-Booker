@@ -1,49 +1,49 @@
-@import '../../config/colors.scss';
-@import '../../config/mixins.scss';
+@import "../../config/colors.scss";
+@import "../../config/mixins.scss";
 
-.About{
-    text-align: left;
-    min-height: calc(100vh - 300px);
+.About {
+  text-align: left;
+  min-height: calc(100vh - 300px);
 
+  .page-header {
+    width: 85%;
+    max-width: 600px;
 
-    .page-header{
-        width: 85%;
-        max-width: 600px;
-        
-        margin: auto;
-        padding-top: 80px;
-        padding-bottom: 20px;
-        
-        h1{
-            font-size: 42px;
-        }
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    h1 {
+      font-size: 42px;
+    }
+  }
+
+  .page-body {
+    padding: 0 20px 50px 20px;
+    max-width: 600px;
+    margin: auto;
+
+    .img-container {
+      width: 325px;
+      height: 330px;
+      background: url(../../images/kevinHeadShot.png) $primary;
+      background-size: cover;
+      position: relative;
+      margin: auto;
+
+      .name-logo {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+      }
     }
 
-    .page-body {
-        padding: 0 20px 50px 20px;
-        max-width: 600px;
-        margin: auto;
-
-        .img-container{
-            width: 325px;
-            height: 330px;
-            background: $primary;
-            position: relative;
-            margin: auto;
-
-            .name-logo {
-                position: absolute;
-                bottom: 15px;
-                left: 15px;
-            }
-        }
-
-        article {
-            padding-top: 30px;
-        }
-
-        p{
-            padding-top: 15px;
-        }
+    article {
+      padding-top: 30px;
     }
+
+    p {
+      padding-top: 15px;
+    }
+  }
 }
