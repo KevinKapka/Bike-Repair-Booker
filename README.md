@@ -18,7 +18,7 @@ Go to [houstoncyclefix.com](https://houstoncyclefix.com/) and select "Book Now" 
 
 ## Check Service Area
 
-Once you have selected your service type type in your address to see if you are in the service area.
+Once you have selected your service type, enter in your address to see if you are in the service area.
 
 <div align="center">
 <img src="./readme-assests/addressVerification.gif" alt="service area demo" width="250" />
