@@ -15,7 +15,7 @@ function Footer() {
                     <img src={logo} alt="site logo. Houston CycleFix" className='logo' />
                 </Link>
                 <div className='foot-sub'>
-                    <p className='footer-email'>placeholder@email.com</p>
+                    <p className='footer-email'>houstoncyclefix@gmail.com</p>
                     <div className='icon-container'>
                         <img src={facebookIcon} alt="facebook icon" className='footer-fb-icon' />
                         <img src={instagramIcon} alt="instagram icon" className='footer-ig-icon' />

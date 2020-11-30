@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Houston CycleFix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. BOOK AN APPOINTMENT
+   - Whether you need a tune-up or a new-in-box bicycle built, book an appointment and we will work around your busy schedule.
+2. REPAIR WITHOUT STRESS
+   - A skilled bicycle mechanic will complete the repair on-site at your home or office.
+3. GET ROLLING AGAIN
+   - You will be ready to roll again in no time! Tell a friend about your quick and convenient CycleFix experience!
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+Go to [houstoncyclefix.com](https://houstoncyclefix.com/) and select "Book Now" to choose from our four services.
 
-### `yarn start`
+<div align="center">
+<img src="./readme-assests/LandingtoBooking.gif" alt="landing to book now demo" width="250" />
+<p></p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Check Service Area
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Once you have selected your service type type in your address to see if you are in the service area.
 
-### `yarn test`
+<div align="center">
+<img src="./readme-assests/addressVerification.gif" alt="service area demo" width="250" />
+<p></p>
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Booking
 
-### `yarn build`
+If you are in the approved service area you will be able to complete the booking process with the interactive calender powered by Calendly. Upon completion you will recieve a confirmation email.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div align="center">
+<img src="./readme-assests/CalendlyDemo.gif" alt="Calendly demo" width="250" />
+<p></p>
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Build Team
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Travis Tincher (Software Engineer)
+  - [LinkedIn](https://www.linkedin.com/in/travis-tincher/), [GitHub](https://github.com/trtincher), [Portfolio](http://travis-tincher-portfolio.surge.sh/)
+- Shani Millar-Vaughn (UX/UI Design)
+  - [LinkedIn](www.linkedin.com/in/shaniio), [Portfolio](https://www.shani.io/)
 
-### `yarn eject`
+## Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h5>
+Languages: <span style="font-weight: normal">JavaScript, HTML, CSS, Sass (SCSS)</span>
+</h5>
+<h5>
+Libraries: <span style="font-weight: normal">React Router, Bootstrap, EmailJS, Calendly API</span>
+</h5>
+<h5>
+Frameworks: <span style="font-weight: normal">ReactJS</span>
+</h5>
+<h5>
+Tools: <span style="font-weight: normal">GitHub, Figma, Netlify</span>
+</h5>
