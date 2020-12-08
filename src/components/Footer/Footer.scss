@@ -1,102 +1,100 @@
-@import '../../config/colors.scss';
-@import '../../config/breakpoints.scss';
-
+@import "../../config/colors.scss";
+@import "../../config/breakpoints.scss";
 
 .Footer {
-    width: 100%;
-    min-height: 258px;
-    background: $primary;
+  width: 100%;
+  min-height: 258px;
+  background: $primary;
+  display: flex;
+  color: $appWhite;
+
+  .footer-branding {
     display: flex;
-    color: $appWhite;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+    flex-grow: 1;
+    padding: 20px;
 
-    .footer-branding {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        height: 100%;
-        flex-grow: 1;
-        padding: 20px;
+    @media only screen and (min-width: $desktop-sm) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 40px;
 
-
-        @media only screen and (min-width: $desktop-sm){
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            margin-left: 40px;
-
-            .foot-sub{
-                padding-left: 30px;
-                padding-top: 60px;
-            }
-        }
-
-        .logo{
-            margin-top: 20px;
-            color: $appWhite;
-
-            @media only screen and (min-width: $desktop-sm){
-                padding-top: 40px;
-            }
-            
-            @media only screen and (min-width: $desktop-lg){
-                width: 220px;
-                margin:0;
-            }
-        }
-
-        .splash-logo-container {
-            img {
-                color: $appWhite;
-            }
-        }
-
-        .footer-email{
-            padding-top: 20px;
-        }
-
-        .icon-container{
-            padding-top: 5px;
-            @media only screen and (min-width: $desktop-sm){
-                padding: 0;
-            }
-        }
-
-        .footer-ig-icon {
-            padding-left: 10px;
-        }
+      .foot-sub {
+        padding-left: 30px;
+        padding-top: 60px;
+      }
     }
 
-    .footer-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        height: 100%;
-        flex-grow: 1;
-        padding: 40px 20px 0px 20px;
+    .logo {
+      margin-top: 20px;
+      color: $appWhite;
 
-        @media only screen and (min-width: $desktop-sm){
-            align-items: center;
-            justify-content: center;
-            padding: 0;
+      @media only screen and (min-width: $desktop-sm) {
+        padding-top: 40px;
+      }
 
-            ul {
-                display: flex;
-            }
-        }
-
-        a {
-            color: $appWhite;
-        }
-        li {
-            padding-top: 5px;
-
-            @media only screen and (min-width: $desktop-sm) {
-                padding-left: 20px;
-                padding-top: 100px;
-            }
-        }
-
+      @media only screen and (min-width: $desktop-lg) {
+        width: 220px;
+        margin: 0;
+      }
     }
+
+    .splash-logo-container {
+      img {
+        color: $appWhite;
+      }
+    }
+
+    .footer-email {
+      padding-top: 20px;
+    }
+
+    .icon-container {
+      padding-top: 5px;
+      visibility: hidden;
+      @media only screen and (min-width: $desktop-sm) {
+        padding: 0;
+      }
+    }
+
+    .footer-ig-icon {
+      padding-left: 10px;
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+    flex-grow: 1;
+    padding: 40px 20px 0px 20px;
+
+    @media only screen and (min-width: $desktop-sm) {
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+
+      ul {
+        display: flex;
+      }
+    }
+
+    a {
+      color: $appWhite;
+    }
+    li {
+      padding-top: 5px;
+
+      @media only screen and (min-width: $desktop-sm) {
+        padding-left: 20px;
+        padding-top: 100px;
+      }
+    }
+  }
 }
